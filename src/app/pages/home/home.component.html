@@ -26,7 +26,7 @@
       
           <div class="detalle-texto">
             @for (item of usuarios; track $index) {
-              <h2>Hola soy, {{ item.nombre }}</h2>
+              <h1>Hola soy, {{ item.nombre }}</h1>
               <p>{{ item.description }}</p>
               <p>{{ item.email }}</p>
               <a [href]="item.github" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -42,8 +42,29 @@
     </div>
   </section>
 
-  <section class="experiencias">
+<section class="experiencias">
+  <div class="experiencias-content">
+    <h2>Experiencias</h2>
+    @for (item of experiencia; track $index) {
+      <div class="experiencia-item">
+        <h4>{{ item.empresa }}</h4>
+        <p><strong>Puesto:</strong> {{ item.puesto }}</p>
+        <p><strong>Inicio:</strong> {{ item.fechaInicio }}</p>
+        <p><strong>Fin:</strong> {{ item.fechaFin }}</p>
+      </div>
+    }
+  </div>
+</section>
 
-  </section>
- 
-      
+<article class="tecnologias">
+    <h2>Tecnologías</h2>
+    <div class="tecnologias-content">
+      <img src="/images/HTMLL.png" alt="">
+      <img src="/images/CSSS.png" alt="">
+      <img src="/images/JavaScript-logo.png" alt="">
+      <img src="/images/angular_icon_gradient.png" alt="">
+      <img src="/images/image.png" alt="">
+      <img src="/images/node-js.png" alt="">
+      <img src="/images/MySQL_textlogo.svg.png" alt="">
+    </div>
+  </article>

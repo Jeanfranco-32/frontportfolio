@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import type { Experiencia } from '../../interfaces/experiencia';
+import { ExperienciaService } from '../../services/experiencia.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './experiencia.component.css'
 })
 export class ExperienciaComponent {
+  experiencia: Experiencia[] = []
+  homeService = inject(ExperienciaService)
 
+  async ngOnInit() {
+    this.experiencia = await this.homeService.getAll();
+  }
 }
