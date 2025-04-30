@@ -1,3 +1,29 @@
-@for (item of usuarios; track $index) {
-    <h1>{{item.nombre}}</h1>
-}
+<header class="navbar custom-navbar justify-content-center">
+    <nav class="navbar-nav d-flex flex-row">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/experiencia">Experiencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/formacion">Formacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/proyecto">Proyectos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<section>
+    @for (item of usuarios; track $index) {
+        <h2>{{item.nombre}}</h2>
+        <p>{{item.description}}</p>
+        <p>{{item.email}}</p>
+        <p>{{item.telefono}}</p>
+        <p>{{item.linkedin}}</p>
+        <a [href]="item.github">{{item.github}}</a>
+    }
+</section>

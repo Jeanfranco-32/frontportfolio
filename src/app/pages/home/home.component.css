@@ -1,0 +1,16 @@
+.custom-navbar {
+	background-color: #333; /* Negro medio oscuro */
+	padding: 1rem;
+}
+
+.nav-link {
+	color: #fff;
+	margin: 0 1rem;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+	color: #ccc;
+	text-decoration: none;
+}

@@ -1,6 +1,6 @@
 export interface Usuario {
     nombre: string;
-    descripcion: string;
+    description: string;
     email: string;
     telefono: string;
     linkedin: string;
