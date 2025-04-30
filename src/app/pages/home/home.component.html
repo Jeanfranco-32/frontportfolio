@@ -1,0 +1,8 @@
+@for (item of usuario; track $index) {
+    <h2>{{item.nombre}}</h2>
+    <p>{{item.descripcion}}</p>
+    <p>{{item.email}}</p>
+    <p>{{item.telefono}}</p>
+    <p>{{item.linkedin}}</p>
+    <a [href]="item.github">{{item.github}}</a>
+}
