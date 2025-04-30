@@ -9,13 +9,10 @@ import { HomeService } from '../../services/home.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
-  usuario: Usuario[] = []
+  usuarios: Usuario[] = []
   homeService = inject(HomeService)
 
   async ngOnInit() {
-    this.usuario = await this.homeService.getAll();
-
+    this.usuarios = await this.homeService.getAll();
   }
-
 }

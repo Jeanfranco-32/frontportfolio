@@ -7,12 +7,12 @@ import type { Usuario } from '../interfaces/usuario';
   providedIn: 'root'
 })
 export class HomeService {
-  private httpclient = inject(HttpClient)
   private baseUrl = 'http://localhost:3000/api/usuario/usuario'
+  private httpClient = inject(HttpClient)
 
   getAll() {
     return lastValueFrom(
-      this.httpclient.get<Usuario[]>(`${this.baseUrl}`)
+      this.httpClient.get<Usuario[]>(`${this.baseUrl}`)
     )
   }
 }
