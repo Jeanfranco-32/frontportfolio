@@ -14,8 +14,8 @@ export class HomeComponent {
   homeService = inject(HomeService)
 
   async ngOnInit() {
-    const result = await this.homeService.getAll();
-    this.usuario = Array.isArray(result) ? result : [result];
+    this.usuario = await this.homeService.getAll();
+
   }
 
 }

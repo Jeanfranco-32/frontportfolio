@@ -12,7 +12,7 @@ export class HomeService {
 
   getAll() {
     return lastValueFrom(
-      this.httpclient.get<Usuario>(`${this.baseUrl}`)
+      this.httpclient.get<Usuario[]>(`${this.baseUrl}`)
     )
   }
 }
