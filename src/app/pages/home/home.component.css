@@ -14,3 +14,236 @@
 	color: #ccc;
 	text-decoration: none;
 }
+
+/* .detalle {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url("https://png.pngtree.com/thumb_back/fw800/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 4rem 2rem;
+	color: white;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.detalle-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	gap: 20rem; 
+}
+
+.detalle figure {
+	flex: 1;
+	margin: 0;
+	text-align: right;
+}
+
+.detalle figure img {
+	max-width: 280px;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+	border: 2px solid #ffffff33;
+	margin: 0 10rem;
+}
+
+.detalle-texto {
+	flex: 2;
+	padding-right: 2rem;
+	position: relative;
+	z-index: 2;
+	color: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.detalle-texto h2 {
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+	color: #fefefe;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	line-height: 1.3;
+}
+
+.detalle-texto p {
+	font-size: 1.1rem;
+	margin-bottom: 1.2rem;
+	color: #dcdcdc;
+	line-height: 1.7;
+}
+
+.detalle-texto a {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 1.5rem;
+	font-size: 1.2rem;
+	color: #007bff;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	font-weight: 500;
+}
+
+.detalle-texto a:hover {
+	color: #0056b3;
+	transform: translateY(-5px);
+}
+
+.detalle-texto i {
+	font-size: 1.5rem;
+	margin-right: 10px;
+	transition: color 0.3s ease;
+}
+
+.detalle-texto a:hover i {
+	color: #007bff;
+} */
+
+.detalle {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("https://png.pngtree.com/thumb_back/fw800/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 6rem 2rem;
+	color: white;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.detalle-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1200px;
+	width: 100%;
+	gap: 4rem;
+}
+
+.detalle figure {
+	flex: 1;
+	margin: 0;
+}
+
+.detalle figure img {
+	max-width: 250px;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+}
+
+.detalle figure img:hover {
+	transform: scale(1.05);
+}
+
+.detalle-texto {
+	flex: 2;
+	padding-left: 2rem;
+	color: #f1f1f1;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2rem;
+}
+
+.detalle-texto h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1.2rem;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: capitalize;
+	line-height: 1.4;
+}
+
+.detalle-texto p {
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+	color: #e0e0e0;
+	line-height: 1.7;
+}
+
+.detalle-texto a {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	color: #5bc0de;
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.detalle-texto a:hover {
+	color: #ffffff;
+	transform: translateY(-4px);
+}
+
+.detalle-texto i {
+	font-size: 1.5rem;
+	margin-right: 8px;
+	transition: color 0.3s ease;
+}
+
+.detalle-texto a:hover i {
+	color: #5bc0de;
+}
+
+.sobremi {
+	background-color: #333;
+	padding: 6rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	position: relative;
+	color: #f0f0f0;
+}
+
+.sobremi-content {
+	max-width: 900px;
+	width: 100%;
+	text-align: center;
+	padding: 3rem;
+	position: relative;
+}
+
+.sobremi h2 {
+	font-size: 3.2rem;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: "Roboto", sans-serif;
+}
+
+.sobremi p {
+	font-size: 1.2rem;
+	line-height: 1.8;
+	color: #d0d0d0;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	text-align: justify;
+	font-family: "Lora", serif;
+}
+
+.sobremi-content::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: orange;
+	border-radius: 2px;
+}

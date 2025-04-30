@@ -17,13 +17,33 @@
     </nav>
   </header>
 
-<section>
-    @for (item of usuarios; track $index) {
-        <h2>{{item.nombre}}</h2>
-        <p>{{item.description}}</p>
-        <p>{{item.email}}</p>
-        <p>{{item.telefono}}</p>
-        <p>{{item.linkedin}}</p>
-        <a [href]="item.github">{{item.github}}</a>
-    }
-</section>
+  
+ <section class="detalle">
+        <div class="detalle-content">
+          <figure>
+            <img src="https://img.freepik.com/vector-gratis/hacker-que-opera-ilustracion-icono-historieta-ordenador-portatil-concepto-icono-tecnologia-aislado-estilo-dibujos-animados-plana_138676-2387.jpg?semt=ais_hybrid&w=740" alt="Foto de usuario" />
+          </figure>
+      
+          <div class="detalle-texto">
+            @for (item of usuarios; track $index) {
+              <h2>Hola soy, {{ item.nombre }}</h2>
+              <p>{{ item.description }}</p>
+              <p>{{ item.email }}</p>
+              <a [href]="item.github" target="_blank"><i class="fa-brands fa-github"></i></a>
+            }
+          </div>
+        </div>
+  </section>
+
+  <section class="sobremi">
+    <div class="sobremi-content">
+      <h2>Sobre mi</h2>
+      <p>En 3 meses de bootcamp, adquirí habilidades clave en desarrollo web, dominando tecnologías como HTML, CSS, JavaScript, Angular, Bootstrap, Node.js y MySQL. Aprendí a crear interfaces de usuario interactivas y responsivas, y a desarrollar aplicaciones full-stack, trabajando tanto en el front-end como en el back-end. Durante el bootcamp, también gané experiencia en la gestión de bases de datos y en la implementación de funcionalidades dinámicas, lo que me permitió crear proyectos completos y funcionales.</p>
+    </div>
+  </section>
+
+  <section class="experiencias">
+
+  </section>
+ 
+      
