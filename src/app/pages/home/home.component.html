@@ -72,7 +72,7 @@
             <h2>Formación</h2>
             @for (item of formacion; track $index) {
                 <div class="formacion-item">
-                    <h3>{{item.institucion}}</h3>
+                    <h3>{{item.institucion}}:</h3>
                     <p>{{item.description}}</p>
                     <p><strong>Inicio:</strong> 30/01/2025</p>
                     <p><strong>Fin:</strong> 25/04/2025</p>
@@ -80,19 +80,36 @@
             }
         </div>
     </section>
-    
     <section class="proyecto">
         <h2>Proyectos</h2>
-        <div class="card"> 
-            <div class="card-body">
-                @for (item of proyectos; track $index) {
-                    <img [src]="item.imagen" class="card-img-top" alt="Imagen del proyecto">
-                    <h5 class="card-title">Titulo: {{item.nombre}}</h5>
-                    <p class="card-text">Tecnologias: {{item.tecnologias}}</p>
-                    <a target="_blank" [href]="item.enlace" class="btn btn-primary">{{item.enlace}}</a>
-                }
+        <div class="proyectos-grid">
+          @for (item of proyectos; track $index) {
+            <div class="proyecto-card">
+              <img [src]="item.imagen" class="card-img-top" alt="Imagen del proyecto">
+              <h5 class="card-title">{{ item.nombre }}</h5>
+              <p class="card-text">Tecnologías: {{ item.tecnologias }}</p>
+              <a target="_blank" [href]="item.enlace" class="card-link">{{ item.enlace }}</a>
             </div>
+          }
         </div>
-    </section>
-    
+      </section>
 </div>
+
+<footer class="footer-alt">
+    <div class="footer-alt-content">
+      <div class="footer-left">
+        <p>&copy; 2025 Hecho por Jean Franco</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/Jeanfranco-32?tab=repositories" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="jeanfranco.developer@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>

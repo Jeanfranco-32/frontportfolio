@@ -11,6 +11,7 @@
 		color: white;
 		font-size: 30px;
 		font-weight: 700;
+		font-family: "Courier New", Courier, monospace;
 	}
 
 	i {
@@ -107,4 +108,286 @@
 
 .detalle-texto i {
 	font-size: 30px;
+}
+
+/* Sección "Sobre mí" */
+.sobremi {
+	padding: 80px 30px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.sobremi-content {
+	max-width: 900px;
+	padding: 0 15px;
+	padding-left: 25px;
+}
+
+.sobremi-content h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 25px;
+	position: relative;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.sobremi-content p {
+	font-size: 18px;
+	line-height: 1.8;
+	color: white;
+	font-weight: 400;
+	text-align: justify;
+	text-wrap: balance;
+}
+
+/* experiencia */
+.experiencias {
+	padding: 80px 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.experiencias-content {
+	max-width: 900px;
+	width: 100%;
+	padding: 0 15px;
+}
+
+.experiencias-content h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	margin-bottom: 40px;
+	position: relative;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.experiencia-item {
+	padding-left: 20px;
+	margin-bottom: 40px;
+	padding-bottom: 15px;
+}
+
+.experiencia-item h4 {
+	font-size: 22px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.experiencia-item p {
+	font-size: 17px;
+	color: white;
+	line-height: 1.6;
+	margin: 5px 0;
+}
+
+.experiencia-item p strong {
+	color: white;
+}
+
+.tecnologias {
+	padding: 80px 20px;
+	text-align: center;
+}
+
+.tecnologias h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 40px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.tecnologias-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.tecnologias-content .img-fluid {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	padding: 15px;
+	border-radius: 16px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+	background: rgba(9, 9, 121, 1);
+	transition: 0.3s;
+}
+
+.tecnologias-content .img-fluid:hover {
+	transform: translateY(-8px) scale(1.05);
+}
+
+/* Sección principal */
+.formacion {
+	padding: 80px 20px;
+	display: flex;
+	justify-content: center;
+}
+
+/* Contenedor interno */
+.formacion-content {
+	max-width: 900px;
+	width: 100%;
+	padding: 0 15px;
+}
+
+/* Título principal */
+.formacion-content h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+/* Ítem individual */
+.formacion-item {
+	padding-left: 20px;
+	margin-bottom: 40px;
+	padding-bottom: 15px;
+	transition: 0.3s;
+}
+
+/* Institución */
+.formacion-item h3 {
+	font-size: 22px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 10px;
+}
+
+/* Texto y fechas */
+.formacion-item p {
+	font-size: 17px;
+	color: white;
+	margin: 6px 0;
+	line-height: 1.6;
+}
+
+/* Negritas destacadas */
+.formacion-item p strong {
+	color: white;
+}
+
+/* Sección general */
+.proyecto {
+	padding: 80px 20px;
+	text-align: center;
+}
+
+.proyecto h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 50px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+/* Grid de proyectos */
+.proyectos-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+/* Estilo individual de la tarjeta */
+.proyecto-card {
+	width: 300px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 16px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-align: left;
+}
+
+/* Hover: animación sutil */
+.proyecto-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagen del proyecto */
+.card-img-top {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 12px;
+	margin-bottom: 15px;
+}
+
+/* Título del proyecto */
+.card-title {
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 10px;
+}
+
+/* Texto de tecnologías */
+.card-text {
+	font-size: 16px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+/* Enlace del proyecto */
+.card-link {
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #3498db;
+	padding: 8px 16px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	display: inline-block;
+}
+
+.card-link:hover {
+	color: white;
+	background-color: #3498db;
+}
+
+.footer-alt {
+	border-top: 1px solid #ccc;
+	padding: 25px 20px;
+	font-family: "Inter", "Segoe UI", sans-serif;
+	font-size: 15px;
+	color: white;
+}
+
+.footer-alt-content {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* Parte izquierda */
+.footer-left p {
+	margin: 0;
+	font-weight: 500;
+}
+
+.footer-right a {
+	margin-left: 15px;
+	font-size: 18px;
+	color: rgba(9, 9, 121, 1);
+	transition: 0.3s;
+}
+
+.footer-right a:hover {
+	color: rgba(0, 212, 255, 1);
+	transform: translateY(-2px);
 }
