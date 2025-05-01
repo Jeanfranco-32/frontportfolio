@@ -1,4 +1,7 @@
 <header class="navbar custom-navbar justify-content-center">
+    <figure>
+        <h2> <i class="fa-solid fa-desktop"></i> <span>Jean Franco</span></h2>
+    </figure>
     <nav class="navbar-nav d-flex flex-row">
       <ul class="nav">
         <li class="nav-item">
@@ -42,17 +45,17 @@
     </div>
   </section>
 
-<section class="experiencias">
+  <section class="experiencias">
   <div class="experiencias-content">
     <h2>Experiencias</h2>
-    @for (item of experiencia; track $index) {
-      <div class="experiencia-item">
-        <h4>{{ item.empresa }}</h4>
-        <p><strong>Puesto:</strong> {{ item.puesto }}</p>
-        <p><strong>Inicio:</strong> {{ item.fechaInicio }}</p>
-        <p><strong>Fin:</strong> {{ item.fechaFin }}</p>
-      </div>
-    }
+      @for (item of experiencia; track $index) {
+        <div class="experiencia-item">
+          <h4>{{ item.empresa }}</h4>
+          <p><strong>Puesto:</strong> {{ item.puesto }}</p>
+          <p><strong>Inicio:</strong> {{ item.fechaInicio }}</p>
+          <p><strong>Fin:</strong> {{ item.fechaFin }}</p>
+        </div>
+      }
   </div>
 </section>
 
@@ -67,4 +70,4 @@
       <img src="/images/node-js.png" alt="">
       <img src="/images/MySQL_textlogo.svg.png" alt="">
     </div>
-  </article>
+  </article> 
