@@ -71,3 +71,17 @@
       <img src="/images/MySQL_textlogo.svg.png" alt="">
     </div>
   </article> 
+
+<section class="formacion">
+  <div class="formacion-content">
+    <h2>Formación</h2>
+    @for (item of formacion; track $index) {
+      <div class="formacion-item">
+        <h3>{{item.institucion}}</h3>
+        <p>{{item.description}}</p>
+        <p><strong>Inicio:</strong> 30/01/2025</p>
+        <p><strong>Fin:</strong> 25/04/2025</p>
+      </div>
+    }
+  </div>
+</section>
