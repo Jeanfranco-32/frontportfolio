@@ -1,101 +1,98 @@
-<header class="navbar custom-navbar justify-content-center">
-    <figure>
-        <h2> <i class="fa-solid fa-desktop"></i> <span>Jean Franco</span></h2>
-    </figure>
-    <nav class="navbar-nav d-flex flex-row">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/experiencia">Experiencias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/formacion">Formacion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/proyecto">Proyectos</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  
- <section class="detalle">
-        <div class="detalle-content">
-          <figure>
-            <img src="https://img.freepik.com/vector-gratis/hacker-que-opera-ilustracion-icono-historieta-ordenador-portatil-concepto-icono-tecnologia-aislado-estilo-dibujos-animados-plana_138676-2387.jpg?semt=ais_hybrid&w=740" alt="Foto de usuario" />
-          </figure>
-      
-          <div class="detalle-texto">
-            @for (item of usuarios; track $index) {
-              <h1>Hola soy, {{ item.nombre }}</h1>
-              <p>{{ item.description }}</p>
-              <p>{{ item.email }}</p>
-              <a [href]="item.github" target="_blank"><i class="fa-brands fa-github"></i></a>
-            }
-          </div>
+<div class="container">
+    <header class="navbar custom-navbar justify-content-center">
+            <h2> <i class="fa-solid fa-desktop"></i> <span>Jean Franco</span></h2>
+        <nav class="navbar-nav d-flex flex-row">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiencia">Experiencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/formacion">Formacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/proyecto">Proyectos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="detalle">
+        <div class="detalle-content d-flex flex-column flex-md-row">
+                <img src="https://img.freepik.com/vector-gratis/hacker-que-opera-ilustracion-icono-historieta-ordenador-portatil-concepto-icono-tecnologia-aislado-estilo-dibujos-animados-plana_138676-2387.jpg?semt=ais_hybrid&w=740" alt="Foto de usuario" class="img-fluid" />
+            <div class="detalle-texto">
+                @for (item of usuarios; track $index) {
+                    <h1>Hola soy, {{ item.nombre }}</h1>
+                    <p>{{ item.description }}</p>
+                    <p>{{ item.email }}</p>
+                    <a [href]="item.github" target="_blank"><i class="fa-brands fa-github"></i></a>
+                }
+            </div>
         </div>
-  </section>
-
-  <section class="sobremi">
-    <div class="sobremi-content">
-      <h2>Sobre mi</h2>
-      <p>En 3 meses de bootcamp, adquirí habilidades clave en desarrollo web, dominando tecnologías como HTML, CSS, JavaScript, Angular, Bootstrap, Node.js y MySQL. Aprendí a crear interfaces de usuario interactivas y responsivas, y a desarrollar aplicaciones full-stack, trabajando tanto en el front-end como en el back-end. Durante el bootcamp, también gané experiencia en la gestión de bases de datos y en la implementación de funcionalidades dinámicas, lo que me permitió crear proyectos completos y funcionales.</p>
-    </div>
-  </section>
-
-  <section class="experiencias">
-  <div class="experiencias-content">
-    <h2>Experiencias</h2>
-      @for (item of experiencia; track $index) {
-        <div class="experiencia-item">
-          <h4>{{ item.empresa }}</h4>
-          <p><strong>Puesto:</strong> {{ item.puesto }}</p>
-          <p><strong>Inicio:</strong> {{ item.fechaInicio }}</p>
-          <p><strong>Fin:</strong> {{ item.fechaFin }}</p>
+    </section>
+    
+    <section class="sobremi">
+        <div class="sobremi-content">
+            <h2>Sobre mi</h2>
+            <p>En 3 meses de bootcamp, adquirí habilidades clave en desarrollo web, dominando tecnologías como HTML, CSS, JavaScript, Angular, Bootstrap, Node.js y MySQL. Aprendí a crear interfaces de usuario interactivas y responsivas, y a desarrollar aplicaciones full-stack, trabajando tanto en el front-end como en el back-end. Durante el bootcamp, también gané experiencia en la gestión de bases de datos y en la implementación de funcionalidades dinámicas, lo que me permitió crear proyectos completos y funcionales.</p>
         </div>
-      }
-  </div>
-</section>
-
-<article class="tecnologias">
-    <h2>Tecnologías</h2>
-    <div class="tecnologias-content">
-      <img src="/images/HTMLL.png" alt="">
-      <img src="/images/CSSS.png" alt="">
-      <img src="/images/JavaScript-logo.png" alt="">
-      <img src="/images/angular_icon_gradient.png" alt="">
-      <img src="/images/image.png" alt="">
-      <img src="/images/node-js.png" alt="">
-      <img src="/images/MySQL_textlogo.svg.png" alt="">
-    </div>
-  </article> 
-
-<section class="formacion">
-  <div class="formacion-content">
-    <h2>Formación</h2>
-    @for (item of formacion; track $index) {
-      <div class="formacion-item">
-        <h3>{{item.institucion}}</h3>
-        <p>{{item.description}}</p>
-        <p><strong>Inicio:</strong> 30/01/2025</p>
-        <p><strong>Fin:</strong> 25/04/2025</p>
-      </div>
-    }
-  </div>
-</section>
-
-<section class="proyecto">
-    <h2>Proyectos</h2>
-    <div class="card"> 
-        <img src="https://www.oneair.es/wp-content/uploads/2023/03/10-cuirosidades-sobre-viajar-en-avion.jpg" class="card-img-top" alt="Imagen del proyecto">
-        <div class="card-body">
-            @for (item of proyectos; track $index) {
-                <h5 class="card-title">Titulo: {{item.nombre}}</h5>
-                <p class="card-text">Tecnologias: {{item.tecnologias}}</p>
-                <a [href]="item.enlace" class="btn btn-primary">{{item.enlace}}</a>
+    </section>
+    
+    <section class="experiencias">
+        <div class="experiencias-content">
+            <h2>Experiencias</h2>
+            @for (item of experiencia; track $index) {
+                <div class="experiencia-item">
+                    <h4>{{ item.empresa }}</h4>
+                    <p><strong>Puesto:</strong> {{ item.puesto }}</p>
+                    <p><strong>Inicio:</strong> {{ item.fechaInicio }}</p>
+                    <p><strong>Fin:</strong> {{ item.fechaFin }}</p>
+                </div>
             }
         </div>
-    </div>
-</section>
+    </section>
+    
+    <article class="tecnologias">
+        <h2>Tecnologías</h2>
+        <div class="tecnologias-content d-flex flex-wrap justify-content-center gap-3">
+            <img src="/images/HTMLL.png" alt="" class="img-fluid">
+            <img src="/images/CSSS.png" alt="" class="img-fluid">
+            <img src="/images/JavaScript-logo.png" alt="" class="img-fluid">
+            <img src="/images/angular_icon_gradient.png" alt="" class="img-fluid">
+            <img src="/images/image.png" alt="" class="img-fluid">
+            <img src="/images/node-js.png" alt="" class="img-fluid">
+            <img src="/images/MySQL_textlogo.svg.png" alt="" class="img-fluid">
+        </div>
+    </article>
+    
+    <section class="formacion">
+        <div class="formacion-content">
+            <h2>Formación</h2>
+            @for (item of formacion; track $index) {
+                <div class="formacion-item">
+                    <h3>{{item.institucion}}</h3>
+                    <p>{{item.description}}</p>
+                    <p><strong>Inicio:</strong> 30/01/2025</p>
+                    <p><strong>Fin:</strong> 25/04/2025</p>
+                </div>
+            }
+        </div>
+    </section>
+    
+    <section class="proyecto">
+        <h2>Proyectos</h2>
+        <div class="card"> 
+            <div class="card-body">
+                @for (item of proyectos; track $index) {
+                    <img [src]="item.imagen" class="card-img-top" alt="Imagen del proyecto">
+                    <h5 class="card-title">Titulo: {{item.nombre}}</h5>
+                    <p class="card-text">Tecnologias: {{item.tecnologias}}</p>
+                    <a target="_blank" [href]="item.enlace" class="btn btn-primary">{{item.enlace}}</a>
+                }
+            </div>
+        </div>
+    </section>
+    
+</div>
