@@ -85,3 +85,17 @@
     }
   </div>
 </section>
+
+<section class="proyecto">
+    <h2>Proyectos</h2>
+    <div class="card"> 
+        <img src="https://www.oneair.es/wp-content/uploads/2023/03/10-cuirosidades-sobre-viajar-en-avion.jpg" class="card-img-top" alt="Imagen del proyecto">
+        <div class="card-body">
+            @for (item of proyectos; track $index) {
+                <h5 class="card-title">Titulo: {{item.nombre}}</h5>
+                <p class="card-text">Tecnologias: {{item.tecnologias}}</p>
+                <a [href]="item.enlace" class="btn btn-primary">{{item.enlace}}</a>
+            }
+        </div>
+    </div>
+</section>
