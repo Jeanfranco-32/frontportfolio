@@ -44,7 +44,7 @@
 	color: #1abc9c;
 }
 
-/* sección detalle */
+/*detalle */
 .detalle {
 	padding: 80px 20px;
 	margin-top: 60px;
@@ -110,7 +110,7 @@
 	font-size: 30px;
 }
 
-/* Sección "Sobre mí" */
+/*Sobre mí */
 .sobremi {
 	padding: 80px 30px;
 	display: flex;
@@ -224,21 +224,18 @@
 	transform: translateY(-8px) scale(1.05);
 }
 
-/* Sección principal */
 .formacion {
 	padding: 80px 20px;
 	display: flex;
 	justify-content: center;
 }
 
-/* Contenedor interno */
 .formacion-content {
 	max-width: 900px;
 	width: 100%;
 	padding: 0 15px;
 }
 
-/* Título principal */
 .formacion-content h2 {
 	font-size: 36px;
 	font-weight: 700;
@@ -248,7 +245,6 @@
 	font-family: "Courier New", Courier, monospace;
 }
 
-/* Ítem individual */
 .formacion-item {
 	padding-left: 20px;
 	margin-bottom: 40px;
@@ -256,7 +252,6 @@
 	transition: 0.3s;
 }
 
-/* Institución */
 .formacion-item h3 {
 	font-size: 22px;
 	font-weight: 600;
@@ -264,7 +259,6 @@
 	margin-bottom: 10px;
 }
 
-/* Texto y fechas */
 .formacion-item p {
 	font-size: 17px;
 	color: white;
@@ -272,12 +266,10 @@
 	line-height: 1.6;
 }
 
-/* Negritas destacadas */
 .formacion-item p strong {
 	color: white;
 }
 
-/* Sección general */
 .proyecto {
 	padding: 80px 20px;
 	text-align: center;
@@ -291,7 +283,6 @@
 	font-family: "Courier New", Courier, monospace;
 }
 
-/* Grid de proyectos */
 .proyectos-grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -299,7 +290,6 @@
 	gap: 30px;
 }
 
-/* Estilo individual de la tarjeta */
 .proyecto-card {
 	width: 300px;
 	padding: 20px;
@@ -310,13 +300,11 @@
 	text-align: left;
 }
 
-/* Hover: animación sutil */
 .proyecto-card:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Imagen del proyecto */
 .card-img-top {
 	width: 100%;
 	height: 180px;
@@ -325,7 +313,6 @@
 	margin-bottom: 15px;
 }
 
-/* Título del proyecto */
 .card-title {
 	font-size: 20px;
 	font-weight: 600;
@@ -333,14 +320,12 @@
 	margin-bottom: 10px;
 }
 
-/* Texto de tecnologías */
 .card-text {
 	font-size: 16px;
 	color: white;
 	margin-bottom: 15px;
 }
 
-/* Enlace del proyecto */
 .card-link {
 	font-size: 15px;
 	color: white;
@@ -374,7 +359,6 @@
 	flex-wrap: wrap;
 }
 
-/* Parte izquierda */
 .footer-left p {
 	margin: 0;
 	font-weight: 500;
@@ -390,4 +374,170 @@
 .footer-right a:hover {
 	color: rgba(0, 212, 255, 1);
 	transform: translateY(-2px);
+}
+
+/* Table */
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.navbar h2 {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.navbar-nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.navbar .nav-link {
+		font-size: 16px;
+		width: 100%;
+		text-align: center;
+		padding: 12px 0;
+	}
+
+	.navbar .nav-link:hover {
+		color: #1abc9c;
+		transform: translateY(-3px);
+	}
+
+	.detalle-content {
+		margin: 0 30px;
+	}
+
+	.detalle-content img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.detalle-texto {
+		max-width: 100%;
+		margin: 10px 0;
+		padding: 0 15px;
+		font-size: 16px;
+	}
+
+	.detalle-texto h1 {
+		font-size: 30px;
+	}
+
+	/* Sobre mí */
+	.sobremi-content {
+		padding-left: 15px;
+	}
+
+	.sobremi-content p {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	.experiencia-item h4 {
+		font-size: 20px;
+	}
+
+	.tecnologias-content .img-fluid {
+		width: 80px;
+		height: 80px;
+	}
+
+	.proyectos-grid {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.proyecto-card {
+		width: 100%;
+	}
+
+	.card-img-top {
+		height: 160px;
+	}
+}
+
+/* Móviles*/
+@media (max-width: 480px) {
+	/* Navbar */
+	.navbar h2 {
+		font-size: 20px;
+	}
+
+	.navbar i {
+		font-size: 18px;
+	}
+
+	.navbar-nav {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.navbar .nav-link {
+		font-size: 14px;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.navbar .nav-link:hover {
+		color: #1abc9c;
+		transform: translateY(-2px);
+	}
+
+	.detalle-content {
+		margin: 0 15px;
+	}
+
+	.detalle-content img {
+		width: 180px;
+		height: 180px;
+	}
+
+	.detalle-texto {
+		max-width: 100%;
+		padding: 0 10px;
+		font-size: 14px;
+	}
+
+	.detalle-texto h1 {
+		font-size: 24px;
+	}
+
+	.sobremi-content {
+		padding-left: 10px;
+	}
+
+	.sobremi-content p {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.experiencia-item h4 {
+		font-size: 18px;
+	}
+
+	.tecnologias-content .img-fluid {
+		width: 70px;
+		height: 70px;
+	}
+
+	.proyectos-grid {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.proyecto-card {
+		width: 100%;
+	}
+
+	.card-img-top {
+		height: 150px;
+	}
 }
