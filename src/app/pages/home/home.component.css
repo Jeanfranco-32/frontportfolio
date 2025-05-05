@@ -496,8 +496,9 @@
 	}
 
 	.detalle-content img {
-		width: 180px;
-		height: 180px;
+		width: 280px;
+		height: 280px;
+		padding: 20px;
 	}
 
 	.detalle-texto {
