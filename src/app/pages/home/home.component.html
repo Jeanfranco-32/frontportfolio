@@ -1,6 +1,24 @@
 <div class="container">
     <header class="navbar custom-navbar justify-content-center">
-            <h2> <i class="fa-solid fa-desktop"></i> <span>Jean Franco</span></h2>
+            <header class="navbar custom-navbar justify-content-center">
+                <h2> <i class="fa-solid fa-desktop"></i> <span>Jean Franco</span></h2>
+                <nav class="navbar-nav d-flex flex-row">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/experiencia">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/formacion">Formacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/proyecto">Proyectos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
     </header>
     
     <section class="detalle">
@@ -31,8 +49,8 @@
                 <div class="experiencia-item">
                     <h4>{{ item.empresa }}</h4>
                     <p><strong>Puesto:</strong> {{ item.puesto }}</p>
-                    <p><strong>Inicio:</strong> {{ item.fechaInicio }}</p>
-                    <p><strong>Fin:</strong> {{ item.fechaFin }}</p>
+                    <p><strong>Inicio:</strong> {{ item.fechaInicio | date:  'dd-MM-yyyy'  }}</p>
+                    <p><strong>Fin:</strong> {{ item.fechaFin | date:  'dd-MM-yyyy' }}</p>
                 </div>
             }
         </div>
@@ -68,12 +86,14 @@
         <h2>Proyectos</h2>
         <div class="proyectos-grid">
           @for (item of proyectos; track $index) {
+            <a href="../proyecto/">
             <div class="proyecto-card">
-              <img [src]="item.imagen" class="card-img-top" alt="Imagen del proyecto">
+              <img src="/images/Screenshot 2025-05-07 at 13-07-22 Viajes.png" class="card-img-top" alt="Imagen del proyecto">
               <h5 class="card-title">{{ item.nombre }}</h5>
               <p class="card-text">Tecnologías: {{ item.tecnologias }}</p>
               <a target="_blank" [href]="item.enlace" class="card-link">{{ item.enlace }}</a>
             </div>
+        </a>
           }
         </div>
       </section>
