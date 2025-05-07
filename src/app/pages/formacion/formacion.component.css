@@ -1,0 +1,103 @@
+.navbar .navbar-nav {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.navbar .nav-item {
+	list-style: none;
+}
+
+.navbar .nav-link {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	margin: 0 20px;
+}
+
+.navbar .nav-link:hover {
+	color: #1abc9c;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	color: white;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+section,
+div {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formacion-item {
+	width: 100%;
+	border-radius: 10px;
+	padding: 20px 25px;
+	margin-bottom: 25px;
+	color: white;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formacion-item h3 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #00d4ff;
+	text-align: center;
+}
+
+.formacion-item p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: white;
+	margin: 6px 0;
+	text-align: center;
+}
+
+.formacion-item p span {
+	font-weight: bold;
+	color: #00d4ff;
+}
+
+/* Móvil*/
+@media (max-width: 480px) {
+	.navbar i {
+		font-size: 18px;
+	}
+
+	.navbar-nav {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.navbar .nav-link {
+		font-size: 14px;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.navbar .nav-link:hover {
+		color: #1abc9c;
+		transform: translateY(-2px);
+	}
+}

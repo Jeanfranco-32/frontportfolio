@@ -64,6 +64,7 @@
 	height: 250px;
 	border-radius: 50%;
 	object-fit: cover;
+	border: 4px solid rgba(9, 9, 121, 1);
 }
 
 .detalle-texto {
@@ -234,22 +235,27 @@
 	max-width: 900px;
 	width: 100%;
 	padding: 0 15px;
+	text-align: center; /* Centra el texto */
 }
 
 .formacion-content h2 {
 	font-size: 36px;
 	font-weight: 700;
 	color: white;
-	text-align: center;
 	margin-bottom: 50px;
 	font-family: "Courier New", Courier, monospace;
 }
 
 .formacion-item {
-	padding-left: 20px;
-	margin-bottom: 40px;
+	margin: 0 auto 40px;
 	padding-bottom: 15px;
 	transition: 0.3s;
+	max-width: 700px;
+
+	span {
+		color: white;
+		font-weight: bold;
+	}
 }
 
 .formacion-item h3 {
@@ -269,7 +275,6 @@
 .formacion-item p strong {
 	color: white;
 }
-
 .proyecto {
 	padding: 80px 20px;
 	text-align: center;

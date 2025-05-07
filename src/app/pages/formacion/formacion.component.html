@@ -1,1 +1,31 @@
-<p>formacion works!</p>
+<header class="navbar custom-navbar justify-content-center">
+    <nav class="navbar-nav d-flex flex-row">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/experiencia">Experiencias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/formacion">Formacion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/proyecto">Proyectos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Formacion</h1>
+<section>
+    <div>
+        @for (item of formacion; track $index) {
+            <div class="formacion-item">
+                <h3>{{item.institucion}}:</h3>
+                <p>{{item.description}}</p>
+                <p><span>Fecha:</span> {{item.fecha}}</p>
+            </div>
+        }
+    </div>
+</section>

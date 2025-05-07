@@ -74,8 +74,7 @@
                 <div class="formacion-item">
                     <h3>{{item.institucion}}:</h3>
                     <p>{{item.description}}</p>
-                    <p><strong>Inicio:</strong> 30/01/2025</p>
-                    <p><strong>Fin:</strong> 25/04/2025</p>
+                    <p><span>Fecha:</span> {{item.fecha}}</p>
                 </div>
             }
         </div>
@@ -84,7 +83,7 @@
         <h2>Proyectos</h2>
         <div class="proyectos-grid">
           @for (item of proyectos; track $index) {
-            <a href="../proyecto/">
+            <a href="../proyecto/" target="_blank">
             <div class="proyecto-card">
               <img src="/images/Screenshot 2025-05-07 at 13-07-22 Viajes.png" class="card-img-top" alt="Imagen del proyecto">
               <h5 class="card-title">{{ item.nombre }}</h5>
