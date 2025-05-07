@@ -4,23 +4,25 @@
 	padding: 0 15px;
 }
 
+/* Estilos generales para la navbar */
 .navbar {
 	padding: 20px 0;
-
-	h2 {
-		color: white;
-		font-size: 30px;
-		font-weight: 700;
-		font-family: "Courier New", Courier, monospace;
-	}
-
-	i {
-		color: rgba(0, 212, 255, 1);
-		margin: 0 10px;
-		font-size: 30px;
-	}
 }
 
+.navbar h2 {
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.navbar i {
+	color: rgba(0, 212, 255, 1);
+	margin: 0 10px;
+	font-size: 30px;
+}
+
+/* Estilos para los items del navbar */
 .navbar .navbar-nav {
 	display: flex;
 	justify-content: center;
@@ -476,31 +478,33 @@
 
 /* Móviles*/
 @media (max-width: 480px) {
-	/* Navbar */
-	.navbar h2 {
-		font-size: 20px;
-	}
-
-	.navbar i {
-		font-size: 18px;
-	}
-
-	.navbar-nav {
+	/* Cambiar la barra de navegación a formato vertical */
+	.navbar .navbar-nav {
 		flex-direction: column;
-		width: 100%;
 		align-items: center;
+		width: 100%;
+	}
+
+	.navbar .nav-item {
+		margin-bottom: 15px;
 	}
 
 	.navbar .nav-link {
-		font-size: 14px;
-		width: 100%;
-		text-align: center;
-		padding: 10px 0;
+		font-size: 20px;
+		margin: 10px 5px;
 	}
 
-	.navbar .nav-link:hover {
-		color: #1abc9c;
-		transform: translateY(-2px);
+	/* Ajustes en el logo */
+	.navbar h2 {
+		font-size: 24px;
+	}
+
+	/* Botón hamburguesa */
+	.navbar-toggler {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 1000;
 	}
 
 	.detalle-content {

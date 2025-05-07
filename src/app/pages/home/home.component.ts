@@ -12,7 +12,7 @@ import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [DatePipe],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -32,4 +32,5 @@ export class HomeComponent {
     this.formacion = await this.formacionService.getAll();
     this.proyectos = await this.proyectoService.getAll();
   }
+
 }

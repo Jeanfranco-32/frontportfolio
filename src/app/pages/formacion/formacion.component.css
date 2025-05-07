@@ -1,3 +1,22 @@
+/* Estilos generales para la navbar */
+.navbar {
+	padding: 20px 0;
+}
+
+.navbar h2 {
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.navbar i {
+	color: rgba(0, 212, 255, 1);
+	margin: 0 10px;
+	font-size: 30px;
+}
+
+/* Estilos para los items del navbar */
 .navbar .navbar-nav {
 	display: flex;
 	justify-content: center;
@@ -79,25 +98,19 @@ div {
 
 /* Móvil*/
 @media (max-width: 480px) {
-	.navbar i {
-		font-size: 18px;
-	}
-
-	.navbar-nav {
+	.navbar .navbar-nav {
 		flex-direction: column;
-		width: 100%;
 		align-items: center;
+		width: 100%;
+		padding: 0;
 	}
 
 	.navbar .nav-link {
-		font-size: 14px;
-		width: 100%;
-		text-align: center;
-		padding: 10px 0;
+		font-size: 18px;
+		margin: 10px 0;
 	}
 
-	.navbar .nav-link:hover {
-		color: #1abc9c;
-		transform: translateY(-2px);
+	.navbar h2 {
+		font-size: 22px;
 	}
 }
