@@ -1,0 +1,169 @@
+.navbar .navbar-nav {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.navbar .nav-item {
+	list-style: none;
+}
+
+.navbar .nav-link {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	margin: 0 20px;
+}
+
+.navbar .nav-link:hover {
+	color: #1abc9c;
+}
+
+section {
+	padding: 40px 20px;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	margin: 60px 40px;
+	font-size: 2.5rem;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+
+	i {
+		color: rgba(0, 212, 255, 1);
+		margin: 0 10px;
+		font-size: 30px;
+	}
+}
+
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+	padding: 0 40px;
+}
+
+.proyecto-card {
+	width: 100%;
+	max-width: 1200px;
+	border-radius: 16px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen superior */
+.card-img-top {
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+
+.card-body {
+	padding: 24px;
+}
+
+.card-title {
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: white;
+}
+
+.card-text {
+	font-size: 1rem;
+	margin-bottom: 12px;
+}
+
+.card-text span.fw-bold {
+	font-weight: 600;
+}
+
+.card-link {
+	display: inline-block;
+	padding: 10px 18px;
+	font-size: 0.95rem;
+	border: 1px solid #3498db;
+	color: #3498db;
+	text-decoration: none;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	word-break: break-word;
+}
+
+.card-link:hover {
+	background-color: #3498db;
+	color: white;
+}
+
+/* Móvil*/
+@media (max-width: 480px) {
+	.navbar i {
+		font-size: 18px;
+	}
+
+	.navbar-nav {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.navbar .nav-link {
+		font-size: 14px;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.navbar .nav-link:hover {
+		color: #1abc9c;
+		transform: translateY(-2px);
+	}
+	.project-container {
+		padding: 0 20px;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+		margin: 40px 20px;
+	}
+
+	h1 i {
+		font-size: 24px;
+		margin: 0 6px;
+	}
+
+	.card-img-top {
+		height: auto;
+		object-fit: contain;
+	}
+
+	.proyecto-card {
+		max-width: 100%;
+	}
+
+	.card-body {
+		padding: 20px;
+	}
+
+	.card-title {
+		font-size: 1.4rem;
+	}
+
+	.card-text {
+		font-size: 0.95rem;
+	}
+
+	.card-link {
+		font-size: 0.9rem;
+		padding: 8px 16px;
+	}
+}

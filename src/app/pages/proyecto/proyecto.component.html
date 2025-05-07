@@ -1,1 +1,35 @@
-<p>proyecto works!</p>
+<header class="navbar custom-navbar justify-content-center">
+    <nav class="navbar-nav d-flex flex-row">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/experiencia">Experiencias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/formacion">Formacion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/proyecto">Proyectos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<h1> <i class="fa-solid fa-briefcase"></i> Mis Proyectos</h1>
+<section>
+    <div class="project-container">
+        @for (item of proyectos; track $index) {
+            <div class="proyecto-card">
+                <img src="/images/Screenshot 2025-05-07 at 13-07-22 Viajes.png" class="card-img-top" alt="Imagen del Proyecto">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.nombre }}</h5>
+                    <p class="card-text">{{ item.descripcion }}</p>
+                    <p><span class="fw-bold">Tecnologías: </span>{{ item.tecnologias }}</p>
+                    <a target="_blank" [href]="item.enlace" class="card-link">{{ item.enlace }}</a>
+                </div>
+            </div>
+        }
+    </div>
+</section>

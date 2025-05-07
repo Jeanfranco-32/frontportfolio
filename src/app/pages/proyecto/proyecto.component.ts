@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ProyectoService } from '../../services/proyecto.service';
+import type { Proyecto } from '../../interfaces/proyecto';
 
 @Component({
   selector: 'app-proyecto',
@@ -7,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './proyecto.component.css'
 })
 export class ProyectoComponent {
+
+  proyectoService = inject(ProyectoService)
+  proyectos: Proyecto[] = []
+
+  async ngOnInit() {
+    this.proyectos = await this.proyectoService.getAll();
+  }
 
 }
