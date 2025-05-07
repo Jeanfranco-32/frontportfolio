@@ -477,7 +477,7 @@
 }
 
 /* Móviles*/
-@media (max-width: 480px) {
+@media (max-width: 460px) {
 	/* Cambiar la barra de navegación a formato vertical */
 	.navbar .navbar-nav {
 		flex-direction: column;

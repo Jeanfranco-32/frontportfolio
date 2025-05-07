@@ -8,7 +8,6 @@ import { FormacionService } from '../../services/formacion.service';
 import type { Formacion } from '../../interfaces/formacion';
 import { ProyectoService } from '../../services/proyecto.service';
 import type { Proyecto } from '../../interfaces/proyecto';
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',

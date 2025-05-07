@@ -45,6 +45,12 @@ h1 {
 	font-size: 2.8rem;
 	color: white;
 	font-family: "Courier New", Courier, monospace;
+
+	i {
+		color: rgba(0, 212, 255, 1);
+		margin: 0 10px;
+		font-size: 30px;
+	}
 }
 
 .experiencias {
@@ -95,7 +101,7 @@ h1 {
 }
 
 /* Móvil*/
-@media (max-width: 480px) {
+@media (max-width: 460px) {
 	.navbar .navbar-nav {
 		flex-direction: column;
 		align-items: center;

@@ -121,7 +121,7 @@ h1 {
 }
 
 /* Móvil*/
-@media (max-width: 480px) {
+@media (max-width: 460px) {
 	.navbar .navbar-nav {
 		flex-direction: column;
 		align-items: center;
