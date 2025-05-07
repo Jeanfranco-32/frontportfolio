@@ -1,0 +1,102 @@
+.navbar .navbar-nav {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.navbar .nav-item {
+	list-style: none;
+}
+
+.navbar .nav-link {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	margin: 0 20px;
+}
+
+.navbar .nav-link:hover {
+	color: #1abc9c;
+}
+
+h1 {
+	text-align: center;
+	margin: 60px 0 20px;
+	font-size: 2.8rem;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.experiencias {
+	display: flex;
+	justify-content: center;
+	padding: 40px 20px;
+	color: white;
+}
+
+.experiencias-content {
+	width: 100%;
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.experiencias-content h2 {
+	font-size: 2rem;
+	margin-bottom: 40px;
+	font-family: "Courier New", Courier, monospace;
+	color: white;
+}
+
+.experiencia-item {
+	border-radius: 12px;
+	padding: 25px 30px;
+	margin-bottom: 20px;
+	width: 100%;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	text-align: center;
+}
+
+.experiencia-item h4 {
+	font-size: 1.4rem;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.experiencia-item p {
+	margin: 6px 0;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.experiencia-item p strong {
+	color: #00d4ff;
+}
+
+/* Móvil*/
+@media (max-width: 480px) {
+	.navbar i {
+		font-size: 18px;
+	}
+
+	.navbar-nav {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.navbar .nav-link {
+		font-size: 14px;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.navbar .nav-link:hover {
+		color: #1abc9c;
+		transform: translateY(-2px);
+	}
+}

@@ -1,1 +1,31 @@
-<p>experiencia works!</p>
+<header class="navbar custom-navbar justify-content-center">
+    <nav class="navbar-nav d-flex flex-row">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/experiencia">Experiencias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/formacion">Formacion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/proyecto">Proyectos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Experiencias</h1>
+<section class="experiencias">
+    <div class="experiencias-content">
+        @for (item of experiencia; track $index) {
+            <div class="experiencia-item">
+                <h4>{{ item.empresa }}</h4>
+                <p><strong>Puesto:</strong> {{ item.puesto }}</p>
+                <p><strong>Fecha:</strong> {{ item.fecha }}</p>
+            </div>
+        }
+    </div>
+</section>
